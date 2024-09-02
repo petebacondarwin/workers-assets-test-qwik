@@ -17,14 +17,14 @@
     "build.preview": "vite build --ssr src/entry.preview.tsx",
     "build.server": "vite build -c adapters/cloudflare-pages/vite.config.ts",
     "build.types": "tsc --incremental --noEmit",
-    "deploy": "pnpm run build && wrangler pages deploy",
+    "deploy": "pnpm run build && wrangler deploy",
     "dev": "vite --mode ssr",
     "dev.debug": "node --inspect-brk ./node_modules/vite/bin/vite.js --mode ssr --force",
     "fmt": "prettier --write .",
     "fmt.check": "prettier --check .",
     "lint": "eslint \"src/**/*.ts*\"",
-    "preview": "pnpm run build && wrangler pages dev",
-    "serve": "wrangler pages dev ./dist --compatibility-flags=nodejs_als",
+    "preview": "pnpm run build && pnpm run serve",
+    "serve": "wrangler dev",
     "start": "vite --open --mode ssr",
     "qwik": "qwik",
     "cf-typegen": "wrangler types"
@@ -44,6 +44,6 @@
     "undici": "*",
     "vite": "^5.2.10",
     "vite-tsconfig-paths": "^4.2.1",
-    "wrangler": "^3.0.0"
+    "wrangler": "0.0.0-c4f0d9e01"
   }
 }
