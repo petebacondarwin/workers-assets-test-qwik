@@ -44,6 +44,11 @@
     "undici": "*",
     "vite": "^5.2.10",
     "vite-tsconfig-paths": "^4.2.1",
-    "wrangler": "0.0.0-c4f0d9e01"
+    "wrangler": "0.0.0-1a4b4ba40"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "@builder.io/qwik-city@1.8.0": "patches/@builder.io__qwik-city@1.8.0.patch"
+    }
   }
 }

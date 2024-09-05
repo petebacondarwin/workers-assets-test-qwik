@@ -3,5 +3,5 @@ name = "workers-assets-test-qwik"
 compatibility_date = "2024-08-21"
 compatibility_flags = ["nodejs_als", "nodejs_compat"]
 
-main = "./dist/_worker.js"
+main = "./server/index.js"
 experimental_assets = { directory = "./dist", binding = "ASSETS" }
